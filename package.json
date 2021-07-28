@@ -25,7 +25,9 @@
   "dependencies": {
     "jsdom": "^16.6.0"
   },
-  "files": ["build"],
+  "files": [
+    "build"
+  ],
   "keywords": [
     "svg",
     "svg preprocessor",
