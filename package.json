@@ -1,5 +1,5 @@
 {
-  "name": "@eelec/svg-preprocessor-node",
+  "name": "@eelec/svg-preprocessor",
   "version": "1.0.0",
   "description": "Preprocessor for SVG attributes",
   "main": "build/index.js",
