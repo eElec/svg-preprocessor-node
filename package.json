@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "description": "Preprocessor for SVG attributes",
   "main": "build/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eElec/svg-preprocessor-node"
+  },
+  "homepage": "https://github.com/eElec/svg-preprocessor-node#readme",
   "scripts": {
     "prepare": "husky install",
     "start": "nodemon --watch src/ -e ts  --exec \"npm run build\"",
@@ -10,7 +15,7 @@
     "prepublish": "npm run build",
     "test": "tsc && node test/"
   },
-  "author": "",
+  "author": "Adrish Aditya <adrishaditya@gmail.com>",
   "license": "MIT",
   "devDependencies": {
     "@types/jsdom": "^16.2.12",
@@ -20,5 +25,10 @@
   "dependencies": {
     "jsdom": "^16.6.0"
   },
-  "files": ["build"]
+  "files": ["build"],
+  "keywords": [
+    "svg",
+    "svg preprocessor",
+    "svgpreprocessor"
+  ]
 }
