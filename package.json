@@ -2,12 +2,13 @@
   "name": "svg-preprocessor-node",
   "version": "1.0.0",
   "description": "Preprocessor for SVG attributes",
-  "main": "index.js",
+  "main": "build/index.js",
   "scripts": {
     "prepare": "husky install",
     "start": "nodemon --watch src/ -e ts  --exec \"npm run build\"",
-    "build": "tsc && node test/",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "prepublish": "npm run build",
+    "test": "tsc && node test/"
   },
   "author": "",
   "license": "MIT",
@@ -18,5 +19,6 @@
   },
   "dependencies": {
     "jsdom": "^16.6.0"
-  }
+  },
+  "files": ["build"]
 }
